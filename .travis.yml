@@ -18,7 +18,8 @@ deploy:
   bucket_path: "github-travisci-to-aws" # same as the app name
   on:
     branch: master
-  access_key_id: $AWS_ACCESS_KEY
+  access_key_id:
+    secure: "$AWS_ACCESS_KEY"
   secret_access_key:
     secure: "$AWS_SECRET_KEY"
 
